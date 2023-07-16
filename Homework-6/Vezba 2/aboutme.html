@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <h1>About Me</h1>
+
+    <ul>
+      <li>Nickname: <span id="nickname"></span></li>
+      <li>Favorites: <span id="favorites"></span></li>
+      <li>Hometown: <span id="hometown"></span></li>
+    </ul>
+
+    <script>
+      document.body.style.fontFamily = "Arial, sans-serif";
+
+      let nickName = document.querySelector("#nickname");
+      nickName.innerHTML = "Marija Zlatkova.";
+
+      let favoriteActivities = document.querySelector("#favorites");
+      favoriteActivities.innerHTML = "movies, music, travelling and coding!";
+
+      let homeTown = document.querySelector("#hometown");
+      homeTown.innerHTML = "Probishtip, North Macedonia.";
+
+      let listItems = document.getElementsByTagName("li");
+      for (let item = 0; item < listItems.length; item++) {
+        listItems[item].classList.add("listitem");
+        listItems[item].style.color = "red";
+      }
+    </script>
+  </body>
+</html>
